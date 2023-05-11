@@ -22,7 +22,14 @@ alias es="cd $HOME/escriptorium; docker compose pull; docker compose up -d; open
 
 alias kamiapp="conda activate kamiapp_env; python3 $HOME/kami-app/app.py & open http://127.0.0.1:7860"
 
+# alias git
 
+alias g="git"
+alias gst="git status"
+alias gbr="git branch"
+alias gci="git commit"
+alias gps="git push"
+alias gpl="git pull"
 
 echo ".bash_aliases execution stops.."
 
