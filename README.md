@@ -1,7 +1,8 @@
-# Dotfiles repo
+# dotfiles
 
-Initialisation personnelle pour une install ubuntu
+initialisation personnelle d'une nouvelle install linux
 
-Install quelques packages
-Configure le bash
-Install miniconda
+- Installation de quelques packages
+- Installation de miniconda
+- Configuration du bash
+
