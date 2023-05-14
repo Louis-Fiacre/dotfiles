@@ -21,6 +21,15 @@ if ! command -v conda &> /dev/null; then
 
     # Suppression du fichier d'installation
     rm "$installer_file"
+    
+    # Essai d'initialisation de Conda et gestion des erreurs
+    if conda init bash --force; then
+        echo "Initialisation de Conda réussie."
+    else
+        echo "Une erreur s'est produite lors de l'initialisation de Conda."
+        # Actions à effectuer en cas d'erreur
+fi
+
 
     echo "Miniconda installé"
 else
