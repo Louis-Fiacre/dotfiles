@@ -22,6 +22,8 @@ if ! command -v conda &> /dev/null; then
     # Suppression du fichier d'installation
     rm "$installer_file"
     
+    export PATH="/opt/miniconda3/bin:$PATH"
+
     # Essai d'initialisation de Conda et gestion des erreurs
     if conda init bash --force; then
         echo "Initialisation de Conda réussie."
