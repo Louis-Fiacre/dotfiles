@@ -1,7 +1,7 @@
 #!/bin/bash
 # installation de miniconda 
 # Chemin de destination de Miniconda /opt
-miniconda_dir="/opt"
+miniconda_dir="/opt/miniconda"
 
 # Vérification si Miniconda est déjà installé
 if ! command -v conda &> /dev/null; then
