@@ -17,7 +17,7 @@ if ! command -v conda &> /dev/null; then
     wget -O "$installer_file" "$miniconda_url"
 
     # Installation de Miniconda
-    bash "$installer_file" -b -p "$miniconda_dir"
+    sudo bash "$installer_file" -p "$miniconda_dir"
 
     # Suppression du fichier d'installation
     rm "$installer_file"
