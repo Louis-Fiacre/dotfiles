@@ -1,11 +1,11 @@
 #!/bin/bash
 # installation de miniconda 
-# Chemin de destination de Miniconda /usr/local/bin
-miniconda_dir="/usr/local/bin"
+# Chemin de destination de Miniconda /opt
+miniconda_dir="/opt"
 
 # Vérification si Miniconda est déjà installé
 if ! command -v conda &> /dev/null; then
-    echo "Miniconda not found. Installing Miniconda..."
+    echo "Installation de Miniconda dans $miniconda_dir..."
 
     # URL de téléchargement de Miniconda
     miniconda_url="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
@@ -22,8 +22,8 @@ if ! command -v conda &> /dev/null; then
     # Suppression du fichier d'installation
     rm "$installer_file"
 
-    echo "Miniconda installation complete."
+    echo "Miniconda installé"
 else
-    echo "Miniconda is already installed."
+    echo "Miniconda déjà installé"
 fi
 
